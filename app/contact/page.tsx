@@ -17,6 +17,7 @@ import {
 import { ContactForm } from "@/components/contact-form";
 import { PageVideoShell } from "@/components/page-video-shell";
 import { SectionReveal } from "@/components/section-reveal";
+import { AymanAvatar } from "@/components/ayman-avatar";
 import { profile } from "@/data/portfolio";
 
 export const metadata = {
@@ -77,7 +78,7 @@ export default function ContactPage() {
     {
       icon: Network,
       label: "حساب LinkedIn",
-      value: "linkedin.com/in/ayman-y-alshehri",
+      value: "linkedin.com/in/ayman-yahya-alshehri",
       href: profile.linkedin,
       color: "text-purple-400",
       glow: "hover:border-purple-400/50",
@@ -157,13 +158,7 @@ export default function ContactPage() {
           {/* Left Contact Details Panel */}
           <SectionReveal className="lg:col-span-5 p-6 sm:p-8 rounded-3xl border border-cyan-400/30 bg-slate-900/80 backdrop-blur-2xl shadow-2xl space-y-6">
             <div className="flex items-center gap-4 p-3 rounded-2xl border border-white/10 bg-slate-950/70">
-              <div className="relative h-16 w-16 shrink-0 rounded-xl border border-cyan-400/40 overflow-hidden shadow-lg">
-                <img
-                  src={profile.avatar}
-                  alt={profile.name}
-                  className="h-full w-full object-cover object-top"
-                />
-              </div>
+              <AymanAvatar size="md" className="rounded-2xl" />
               <div>
                 <h3 className="text-base font-bold text-white">{profile.name}</h3>
                 <p className="text-xs font-mono text-cyan-300">{profile.title}</p>

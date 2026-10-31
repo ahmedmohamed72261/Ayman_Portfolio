@@ -26,6 +26,7 @@ import {
   profile,
   skills,
 } from "@/data/portfolio";
+import { AymanAvatar } from "@/components/ayman-avatar";
 
 function GradientTitle({
   children,
@@ -135,15 +136,8 @@ export function ResumePageClient() {
             {/* Document Header Bar */}
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-6 border-b border-white/10 pb-8">
               <div className="flex flex-col sm:flex-row sm:items-center gap-5">
-                {/* Profile Photo Avatar */}
-                <div className="relative h-24 w-24 sm:h-28 sm:w-28 shrink-0 rounded-2xl border-2 border-teal-400/40 bg-slate-900 overflow-hidden shadow-xl print-hide">
-                  <img
-                    src={profile.avatar}
-                    alt={profile.name}
-                    className="h-full w-full object-cover object-top"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent" />
-                </div>
+                {/* Profile Character Monogram Avatar */}
+                <AymanAvatar size="lg" className="rounded-2xl print-hide" />
 
                 <div className="space-y-2">
                   <span className="inline-flex items-center gap-2 rounded-full border border-teal-400/30 bg-teal-400/10 px-3 py-1 text-xs font-mono font-bold text-teal-300 print-badge">

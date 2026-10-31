@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Cpu, Sparkles } from "lucide-react";
 import { profile } from "@/data/portfolio";
+import { AymanAvatar } from "@/components/ayman-avatar";
 
 const STAGES = [
   "تهيئة بيئة تحليل البيانات ولوحات Power BI...",
@@ -71,15 +72,8 @@ export function Preloader() {
               transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
             />
 
-            {/* Center Profile Avatar */}
-            <div className="relative h-24 w-24 rounded-full p-1 bg-slate-900 border border-teal-400/50 shadow-[0_0_30px_rgba(45,212,191,0.5)] overflow-hidden z-10">
-              <img
-                src={profile.avatar}
-                alt={profile.name}
-                className="h-full w-full rounded-full object-cover"
-              />
-              <div className="absolute inset-0 rounded-full bg-teal-400/10 mix-blend-overlay" />
-            </div>
+            {/* Center Character Avatar */}
+            <AymanAvatar size="lg" className="z-10" />
           </div>
 
           {/* Percentage Counter */}

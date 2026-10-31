@@ -135,5 +135,5 @@ npm run start
 
 - 📧 **Email**: [ayman.y.alshehri@gmail.com](mailto:ayman.y.alshehri@gmail.com)  
 - 📱 **Phone**: +966 54 424 4085  
-- 🔗 **LinkedIn**: [linkedin.com/in/ayman-y-alshehri](https://linkedin.com/in/ayman-y-alshehri)  
+- 🔗 **LinkedIn**: [linkedin.com/in/ayman-yahya-alshehri](https://www.linkedin.com/in/ayman-yahya-alshehri)  
 - 🐙 **GitHub**: [github.com/ayman-alshehri](https://github.com/ayman-alshehri)  

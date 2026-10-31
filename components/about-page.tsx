@@ -25,6 +25,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MagneticButton } from "@/components/magnetic-button";
 import { PageVideoShell } from "@/components/page-video-shell";
+import { AymanExecutiveIdentityCard } from "@/components/ayman-avatar";
 import {
   certifications,
   education,
@@ -223,26 +224,9 @@ export function AboutPageClient() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            {/* Right Col (in RTL): Executive Photo & Status Card */}
-            <div className="about-fade-in lg:col-span-5 relative group rounded-3xl border border-teal-400/30 bg-[#121826]/80 backdrop-blur-2xl p-5 shadow-2xl overflow-hidden flex flex-col justify-between">
-              <div className="relative w-full aspect-[4/4] rounded-2xl overflow-hidden border border-teal-400/20 shadow-xl bg-black">
-                <img
-                  src={profile.avatar}
-                  alt={`${profile.name} - ${profile.title}`}
-                  className="h-full w-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e16] via-transparent to-transparent" />
-                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-teal-400/40 bg-slate-950/90 px-3 py-1 text-[0.7rem] font-mono text-teal-300 backdrop-blur-md">
-                    <span className="h-2 w-2 rounded-full bg-teal-400 animate-ping" />
-                    <span>متاح للفرص المهنية</span>
-                  </span>
-                  <span className="text-[0.68rem] font-mono text-teal-300 bg-slate-950/90 px-2.5 py-1 rounded-full border border-teal-400/30">
-                    المدينة المنورة
-                  </span>
-                </div>
-              </div>
-
+            {/* Right Col (in RTL): Executive Monogram & Status Card */}
+            <div className="about-fade-in lg:col-span-5 relative group rounded-3xl border border-teal-400/30 bg-[#121826]/80 backdrop-blur-2xl p-4 sm:p-5 shadow-2xl overflow-hidden flex flex-col justify-between">
+              <AymanExecutiveIdentityCard />
               <div className="mt-4 space-y-2">
                 <h3 className="text-xl font-bold text-white">{profile.name}</h3>
                 <p className="text-xs font-mono text-teal-300">{profile.titleEn}</p>

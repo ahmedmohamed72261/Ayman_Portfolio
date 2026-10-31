@@ -19,6 +19,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { profile } from "@/data/portfolio";
 import { cn } from "@/components/utils";
+import { AymanAvatar } from "@/components/ayman-avatar";
 
 const links = [
   { href: "/", label: "الرئيسية", icon: Home, desc: "نبذة واستعراض المشاريع" },
@@ -84,13 +85,7 @@ export function Navigation() {
             href="/"
             className="group flex items-center gap-3 py-1 px-2 rounded-2xl transition-all focus:outline-none"
           >
-            <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full border border-teal-400/60 p-0.5 bg-slate-900 shadow-[0_0_12px_rgba(45,212,191,0.25)] group-hover:scale-105 group-hover:border-teal-300 group-hover:shadow-[0_0_20px_rgba(45,212,191,0.45)] transition-all duration-300">
-              <img
-                src={profile.avatar}
-                alt={profile.name}
-                className="h-full w-full rounded-full object-cover object-center"
-              />
-            </div>
+            <AymanAvatar size="sm" interactive={false} />
 
             <div className="flex flex-col text-right justify-center">
               <span className="text-sm font-bold text-white group-hover:text-teal-300 transition-colors whitespace-nowrap">
@@ -211,13 +206,7 @@ export function Navigation() {
                   <div className="w-12 h-1.5 rounded-full bg-white/20 mb-4" />
                   <div className="w-full flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="h-10 w-10 rounded-full border border-teal-400/40 overflow-hidden bg-slate-900">
-                        <img
-                          src={profile.avatar}
-                          alt={profile.name}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
+                      <AymanAvatar size="sm" interactive={false} />
                       <div className="text-right">
                         <h3 className="text-sm font-bold text-white leading-tight">
                           {profile.name}
